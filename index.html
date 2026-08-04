@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Тигран Айрапетян — Системный аналитик</title>
-<meta name="description" content="Системный аналитик с 10-летним опытом: проектирование систем и интеграций, API-контракты, требования, архитектура решений.">
+<title id="page-title">Тигран Айрапетян — Системный аналитик</title>
+<meta id="page-description" name="description" content="Системный аналитик с 10-летним опытом: проектирование систем и интеграций, API-контракты, требования, архитектура решений.">
 <meta property="og:title" content="Тигран Айрапетян — Системный аналитик">
 <meta property="og:description" content="Системный аналитик с 10-летним опытом: проектирование систем и интеграций, API-контракты, требования, архитектура решений.">
 <meta property="og:type" content="profile">
@@ -45,7 +45,37 @@
   main {
     max-width: 720px;
     margin: 0 auto;
+    position: relative;
   }
+  .lang-switch {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    display: flex;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px;
+    gap: 2px;
+    z-index: 10;
+  }
+  .lang-switch button {
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.35em 0.75em;
+    border-radius: 999px;
+    cursor: pointer;
+    line-height: 1.4;
+  }
+  .lang-switch button.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  [hidden] { display: none !important; }
   h1 {
     font-size: 2rem;
     font-weight: 700;
@@ -141,24 +171,6 @@
     font-size: 0.92rem;
   }
   .skill-line:last-child { margin-bottom: 0; }
-  .ai-list {
-    list-style: none;
-    margin: 0.6em 0 0;
-    padding: 0;
-  }
-  .ai-list li {
-    margin-bottom: 0.7em;
-    padding-left: 1.1em;
-    position: relative;
-  }
-  .ai-list li::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-  }
-  .ai-list li:last-child { margin-bottom: 0; }
-  .ai-list strong { color: var(--text); }
   footer {
     margin-top: 3.5em;
     padding-top: 1.5em;
@@ -186,6 +198,7 @@
     body { padding: 0; font-size: 12.5px; }
     .contacts a { border-bottom: none; }
     footer { display: none; }
+    .no-print { display: none !important; }
     h2 { break-after: avoid; }
     .job, .skill-group { break-inside: avoid; }
   }
@@ -194,117 +207,285 @@
 <body>
 <main>
 
-  <div class="header-row">
-    <img class="avatar" src="AfterlightImage.jpg" alt="Тигран Айрапетян">
-    <div>
-      <h1>Тигран Айрапетян</h1>
-      <p class="role">Системный аналитик</p>
-    </div>
+  <div class="lang-switch no-print" role="group" aria-label="Language">
+    <button type="button" data-lang="ru">RU</button>
+    <button type="button" data-lang="en">EN</button>
   </div>
-  <ul class="contacts">
-    <li>📍 Ереван, Москва</li>
-    <li>🌍 Гражданство РФ</li>
-    <li>🇬🇧 English B2–C1</li>
-    <li>⌨️ Гибрид / Удалённо / Офис</li>
-    <li>💬 <a href="https://t.me/tknjfs">t.me/tknjfs</a></li>
-    <li>✉️ <a href="mailto:tigran.pro5@gmail.com">tigran.pro5@gmail.com</a></li>
-  </ul>
 
-  <section>
-    <h2>О себе</h2>
-    <p class="about">Системный аналитик с 10-летним опытом в разработке цифровых продуктов: проектирование систем и интеграций, сбор и формирование требований, проработка архитектуры решений. Прошёл полный цикл продуктовой разработки: UI/UX-дизайн; разработка приложений на Swift; системный анализ; управление проектами. Одинаково свободно работаю и с продуктовыми требованиями, и с технической спецификацией.</p>
-  </section>
+  <div id="content-ru" class="lang-block" lang="ru">
 
-  <section>
-    <h2>Опыт работы</h2>
-
-    <div class="job">
-      <div class="job-head">
-        <span class="job-title">Eclipse Digital <span class="job-role">— Системный аналитик</span></span>
-        <span class="job-dates">2023 — настоящее время</span>
+    <div class="header-row">
+      <img class="avatar" src="AfterlightImage.jpg" alt="Тигран Айрапетян">
+      <div>
+        <h1>Тигран Айрапетян</h1>
+        <p class="role">Системный аналитик</p>
       </div>
-      <ul class="bullets">
-        <li><strong>Анализ требований:</strong> собираю и формализую требования, перевожу бизнес-задачи в архитектуру решений и API-контракты.</li>
-        <li><strong>Проектирование:</strong> разработка технических решений для продуктов, включающих в себя микросервисную и монолитную архитектуру разных доменных областей, а также мобильные приложения и веб-интерфейсы.</li>
-        <li><strong>Документация:</strong> ведение проектной документации по принципу single source of truth, поддерживаю её как базу знаний продукта и системы.</li>
-      </ul>
     </div>
+    <ul class="contacts">
+      <li>📍 Ереван, Москва</li>
+      <li>🌍 Гражданство РФ</li>
+      <li>🇬🇧 English B2–C1</li>
+      <li>⌨️ Гибрид / Удалённо / Офис</li>
+      <li>💬 <a href="https://t.me/tknjfs">t.me/tknjfs</a></li>
+      <li>✉️ <a href="mailto:tigran.pro5@gmail.com">tigran.pro5@gmail.com</a></li>
+    </ul>
 
-    <div class="job">
-      <div class="job-head">
-        <span class="job-title">Freelance <span class="job-role">— Swift-разработчик</span></span>
-        <span class="job-dates">2021 — 2023</span>
+    <section>
+      <h2>О себе</h2>
+      <p class="about">Системный аналитик с 10-летним опытом в разработке цифровых продуктов: проектирование систем и интеграций, сбор и формирование требований, проработка архитектуры решений. Прошёл полный цикл продуктовой разработки: UI/UX-дизайн; разработка приложений на Swift; системный анализ; управление проектами. Одинаково свободно работаю и с продуктовыми требованиями, и с технической спецификацией.</p>
+    </section>
+
+    <section>
+      <h2>Опыт работы</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Eclipse Digital <span class="job-role">— Системный аналитик</span></span>
+          <span class="job-dates">2023 — настоящее время</span>
+        </div>
+        <ul class="bullets">
+          <li><strong>Анализ требований:</strong> собираю и формализую требования, перевожу бизнес-задачи в архитектуру решений и API-контракты.</li>
+          <li><strong>Проектирование:</strong> разработка технических решений для продуктов, включающих в себя микросервисную и монолитную архитектуру разных доменных областей, а также мобильные приложения и веб-интерфейсы.</li>
+          <li><strong>Документация:</strong> ведение проектной документации по принципу single source of truth, поддерживаю её как базу знаний продукта и системы.</li>
+        </ul>
       </div>
-      <ul class="bullets">
-        <li><strong>UI/UX:</strong> дизайн приложений на основе Human Interface Guidelines.</li>
-        <li><strong>Разработка:</strong> iOS-приложения на Swift.</li>
-        <li><strong>Проектирование и документирование:</strong> технических решений — от прототипа интерфейса до архитектуры приложения.</li>
-      </ul>
-    </div>
 
-    <div class="job">
-      <div class="job-head">
-        <span class="job-title">Request Design <span class="job-role">— UI/UX-дизайнер → Деливери-менеджер / Системный аналитик</span></span>
-        <span class="job-dates">2016 — 2020</span>
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Freelance <span class="job-role">— Swift-разработчик</span></span>
+          <span class="job-dates">2021 — 2023</span>
+        </div>
+        <ul class="bullets">
+          <li><strong>UI/UX:</strong> дизайн приложений на основе Human Interface Guidelines.</li>
+          <li><strong>Разработка:</strong> iOS-приложения на Swift.</li>
+          <li><strong>Проектирование и документирование:</strong> технических решений — от прототипа интерфейса до архитектуры приложения.</li>
+        </ul>
       </div>
-      <ul class="bullets">
-        <li>Прошёл карьерный путь от дизайна интерфейсов до управления поставкой, разработки и системного анализа.</li>
-        <li>Проектировал UI/UX, снимал и формализовал требования, вёл проектную документацию, вёл прямую коммуникацию с заказчиками и стейкхолдерами.</li>
-        <li>Отвечал за проектирование решений и управление процессом поставки на проектах.</li>
-      </ul>
+
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Request Design <span class="job-role">— UI/UX-дизайнер → Деливери-менеджер / Системный аналитик</span></span>
+          <span class="job-dates">2016 — 2020</span>
+        </div>
+        <ul class="bullets">
+          <li>Прошёл карьерный путь от дизайна интерфейсов до управления поставкой, разработки и системного анализа.</li>
+          <li>Проектировал UI/UX, снимал и формализовал требования, вёл проектную документацию, вёл прямую коммуникацию с заказчиками и стейкхолдерами.</li>
+          <li>Отвечал за проектирование решений и управление процессом поставки на проектах.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Профессиональные навыки</h2>
+
+      <div class="skill-group">
+        <div class="skill-name">Анализ требований и продуктовый подход</div>
+        <p class="skill-line">Сбор продуктовых и системных требований · анализ и выявление требований · декомпозиция по epics / user stories / tech stories · таксономия требований (business / functional / non-functional / user / system, quality attributes, constraints) · описание бизнес-процессов и бизнес-логики · UX-прототипирование · проектирование компонентов и взаимодействий системы</p>
+        <p class="skill-line tools">Инструменты: Figma, FigJam, Miro, MindMeister, draw.io, Lucidchart, Sketch, SwiftUI, LLM-инструменты</p>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-name">Архитектура и проектирование систем</div>
+        <p class="skill-line">Проектирование архитектуры и поведения системы · моделирование и прототипирование данных · описание баз данных (нормализация, индексы, партиционирование, шардинг, SQL/NoSQL) · описание алгоритмов, маппинга и трансформации данных · проектирование типовых продуктовых механик (идентификация и сессии, в т.ч. беспарольная, pin-code, логирование, email-уведомления, индикация статуса соединения) · написание сценариев и пользовательской документации</p>
+        <p class="skill-line tools">Нотации и стандарты: C4 Model, UML, ERD, DBML, BPMN, Sequence Diagram, Use Case, Flow chart, Activity Diagram, PlantUML, Mermaid, Human Interface Guidelines, Material Design</p>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-name">Интеграции и API</div>
+        <p class="skill-line">Contract-first проектирование · API-спецификация и API mocking · REST API, WebSocket, Webhook · событийные интеграции через AsyncAPI и RabbitMQ · платёжные интеграции (Stripe, CloudPayments, 3D Secure)</p>
+        <p class="skill-line tools">Форматы и инструменты: OpenAPI, AsyncAPI, YAML, JSON, XML, CSV, Postman, RapidAPI, Redocly, DocHub</p>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-name">Безопасность</div>
+        <p class="skill-line">Проектирование контроля доступа к системе · OAuth 2.0/2.1 (Authorization Code, Client Credentials, Implicit, ROPC) · модели RBAC / ABAC</p>
+        <p class="skill-line tools">Протоколы и алгоритмы: JWT Bearer Authentication, Basic Authentication, HMAC, Diffie-Hellman, эллиптическая криптография (ECDH)</p>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-name">Процессы разработки и документация</div>
+        <p class="skill-line">Следование принципам SDLC (discovery → planning → system design) и архитектурным принципам · соблюдение RFC · documentation as code · версионирование документации (Semantic Versioning) · документация как база знаний</p>
+        <p class="skill-line tools">Подходы: Domain-Driven Design, MVVM, MVC, монолит / модули / микросервисы, брокеры сообщений, ETL</p>
+        <p class="skill-line tools">Инструменты: Markdown, Confluence, Notion, Obsidian, BookStack, Git, GitHub, GitLab, GitFlow, IDE, Grafana, Camunda</p>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-name">Использование ИИ в работе</div>
+        <p class="skill-line">Использую несколько моделей как интегрированный в рабочую среду инструмент — для автоматизации процессов, поддержки исследований и снижения рутинной нагрузки.</p>
+        <p class="skill-line"><strong>Документация без переключения контекста.</strong> Интегрирую модель в рабочие инструменты: подход documentation-as-code позволяет наделить модель глубоким пониманием контекста продукта и системы, что помогает автоматизировать часть работы по ведению документации и снизить рутинную нагрузку. Для более традиционных подходов к ведению документации использую интеграцию модели через MCP.</p>
+        <p class="skill-line"><strong>Память и база знаний.</strong> Веду структурированную память по проектам и договорённостям, совмещая память и контекст модели с собственной системой заметок на основе Obsidian.</p>
+        <p class="skill-line"><strong>Миграция документации.</strong> Использовал модели для миграции документации нескольких зрелых продуктов (700+ страниц) из BookStack+Draw.io в Markdown и декларативные форматы (PlantUML, Mermaid, YAML, Camunda) для выстраивания подхода documentation-as-code.</p>
+        <p class="skill-line"><strong>Знаю границы инструмента.</strong> Осознанное использование LLM с пониманием границ возможностей модели, точечное и контролируемое применение с наращиванием контекста.</p>
+      </div>
+
+    </section>
+
+    <footer>
+      <span>Тигран Айрапетян · Системный аналитик</span>
+      <button class="print-btn no-print" onclick="window.print()">Сохранить в PDF</button>
+    </footer>
+
+  </div>
+
+  <div id="content-en" class="lang-block" lang="en" hidden>
+
+    <div class="header-row">
+      <img class="avatar" src="AfterlightImage.jpg" alt="Tigran Airapetyan">
+      <div>
+        <h1>Tigran Airapetyan</h1>
+        <p class="role">Systems Analyst</p>
+      </div>
     </div>
-  </section>
+    <ul class="contacts">
+      <li>📍 Yerevan, Moscow</li>
+      <li>🌍 Citizenship: Russia</li>
+      <li>🇬🇧 English B2–C1</li>
+      <li>⌨️ Hybrid / Remote / Office</li>
+      <li>💬 <a href="https://t.me/tknjfs">t.me/tknjfs</a></li>
+      <li>✉️ <a href="mailto:tigran.pro5@gmail.com">tigran.pro5@gmail.com</a></li>
+    </ul>
 
-  <section>
-    <h2>Профессиональные навыки</h2>
+    <section>
+      <h2>About</h2>
+      <p class="about">Systems analyst with 10 years of experience building digital products: designing systems and integrations, gathering and formalizing requirements, working out solution architecture. I've been through the full product development cycle — UI/UX design, iOS development in Swift, systems analysis, and project management — so I move equally comfortably between product requirements and technical specifications.</p>
+    </section>
 
-    <div class="skill-group">
-      <div class="skill-name">Анализ требований и продуктовый подход</div>
-      <p class="skill-line">Сбор продуктовых и системных требований · анализ и выявление требований · декомпозиция по epics / user stories / tech stories · таксономия требований (business / functional / non-functional / user / system, quality attributes, constraints) · описание бизнес-процессов и бизнес-логики · UX-прототипирование · проектирование компонентов и взаимодействий системы</p>
-      <p class="skill-line tools">Инструменты: Figma, FigJam, Miro, MindMeister, draw.io, Lucidchart, Sketch, SwiftUI, LLM-инструменты</p>
-    </div>
+    <section>
+      <h2>Experience</h2>
 
-    <div class="skill-group">
-      <div class="skill-name">Архитектура и проектирование систем</div>
-      <p class="skill-line">Проектирование архитектуры и поведения системы · моделирование и прототипирование данных · описание баз данных (нормализация, индексы, партиционирование, шардинг, SQL/NoSQL) · описание алгоритмов, маппинга и трансформации данных · проектирование типовых продуктовых механик (идентификация и сессии, в т.ч. беспарольная, pin-code, логирование, email-уведомления, индикация статуса соединения) · написание сценариев и пользовательской документации</p>
-      <p class="skill-line tools">Нотации и стандарты: C4 Model, UML, ERD, DBML, BPMN, Sequence Diagram, Use Case, Flow chart, Activity Diagram, PlantUML, Mermaid, Human Interface Guidelines, Material Design</p>
-    </div>
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Eclipse Digital <span class="job-role">— Systems Analyst</span></span>
+          <span class="job-dates">2023 — present</span>
+        </div>
+        <ul class="bullets">
+          <li><strong>Requirements analysis:</strong> gather and formalize requirements, translating business problems into solution architecture and API contracts.</li>
+          <li><strong>Design:</strong> developing technical solutions for products spanning microservice and monolithic architectures across different domains, as well as mobile apps and web interfaces.</li>
+          <li><strong>Documentation:</strong> maintaining project documentation as a single source of truth, keeping it current as the product and system knowledge base.</li>
+        </ul>
+      </div>
 
-    <div class="skill-group">
-      <div class="skill-name">Интеграции и API</div>
-      <p class="skill-line">Contract-first проектирование · API-спецификация и API mocking · REST API, WebSocket, Webhook · событийные интеграции через AsyncAPI и RabbitMQ · платёжные интеграции (Stripe, CloudPayments, 3D Secure)</p>
-      <p class="skill-line tools">Форматы и инструменты: OpenAPI, AsyncAPI, YAML, JSON, XML, CSV, Postman, RapidAPI, Redocly, DocHub</p>
-    </div>
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Freelance <span class="job-role">— Swift Developer</span></span>
+          <span class="job-dates">2021 — 2023</span>
+        </div>
+        <ul class="bullets">
+          <li><strong>UI/UX:</strong> designing apps based on the Human Interface Guidelines.</li>
+          <li><strong>Development:</strong> iOS apps in Swift.</li>
+          <li><strong>Design & documentation:</strong> technical solutions — from interface prototypes to application architecture.</li>
+        </ul>
+      </div>
 
-    <div class="skill-group">
-      <div class="skill-name">Безопасность</div>
-      <p class="skill-line">Проектирование контроля доступа к системе · OAuth 2.0/2.1 (Authorization Code, Client Credentials, Implicit, ROPC) · модели RBAC / ABAC</p>
-      <p class="skill-line tools">Протоколы и алгоритмы: JWT Bearer Authentication, Basic Authentication, HMAC, Diffie-Hellman, эллиптическая криптография (ECDH)</p>
-    </div>
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Request Design <span class="job-role">— UI/UX Designer → Delivery Manager / Systems Analyst</span></span>
+          <span class="job-dates">2016 — 2020</span>
+        </div>
+        <ul class="bullets">
+          <li>Progressed from interface design to delivery management and systems analysis.</li>
+          <li>Designed UI/UX, gathered and formalized requirements, maintained project documentation, and communicated directly with clients and stakeholders.</li>
+          <li>Owned solution design and delivery management on projects.</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="skill-group">
-      <div class="skill-name">Процессы разработки и документация</div>
-      <p class="skill-line">Следование принципам SDLC (discovery → planning → system design) и архитектурным принципам · соблюдение RFC · documentation as code · версионирование документации (Semantic Versioning) · документация как база знаний</p>
-      <p class="skill-line tools">Подходы: Domain-Driven Design, MVVM, MVC, монолит / модули / микросервисы, брокеры сообщений, ETL</p>
-      <p class="skill-line tools">Инструменты: Markdown, Confluence, Notion, Obsidian, BookStack, Git, GitHub, GitLab, GitFlow, IDE, Grafana, Camunda</p>
-    </div>
+    <section>
+      <h2>Professional Skills</h2>
 
-    <div class="skill-group">
-      <div class="skill-name">Использование ИИ в работе</div>
-      <p class="skill-line">Использую несколько моделей как интегрированный в рабочую среду инструмент — для автоматизации процессов, поддержки исследований и снижения рутинной нагрузки.</p>
-      <p class="skill-line"><strong>Документация без переключения контекста.</strong> Интегрирую модель в рабочие инструменты: подход documentation-as-code позволяет наделить модель глубоким пониманием контекста продукта и системы, что помогает автоматизировать часть работы по ведению документации и снизить рутинную нагрузку. Для более традиционных подходов к ведению документации использую интеграцию модели через MCP.</p>
-      <p class="skill-line"><strong>Память и база знаний.</strong> Веду структурированную память по проектам и договорённостям, совмещая память и контекст модели с собственной системой заметок на основе Obsidian.</p>
-      <p class="skill-line"><strong>Миграция документации.</strong> Использовал модели для миграции документации нескольких зрелых продуктов (700+ страниц) из BookStack+Draw.io в Markdown и декларативные форматы (PlantUML, Mermaid, YAML, Camunda) для выстраивания подхода documentation-as-code.</p>
-      <p class="skill-line"><strong>Знаю границы инструмента.</strong> Осознанное использование LLM с пониманием границ возможностей модели, точечное и контролируемое применение с наращиванием контекста.</p>
-    </div>
+      <div class="skill-group">
+        <div class="skill-name">Requirements Analysis & Product Thinking</div>
+        <p class="skill-line">Gathering product and system requirements · requirements analysis and elicitation · decomposition into epics / user stories / tech stories · requirements taxonomy (business / functional / non-functional / user / system, quality attributes, constraints) · describing business processes and business logic · UX prototyping · designing system components and interactions</p>
+        <p class="skill-line tools">Tools: Figma, FigJam, Miro, MindMeister, draw.io, Lucidchart, Sketch, SwiftUI, LLM tools</p>
+      </div>
 
-  </section>
+      <div class="skill-group">
+        <div class="skill-name">Architecture & System Design</div>
+        <p class="skill-line">Designing system architecture and behavior · data modeling and prototyping · database design (normalization, indexing, partitioning, sharding, SQL/NoSQL) · describing algorithms, data mapping and transformation · designing common product mechanics (identification and sessions, incl. passwordless, PIN codes, logging, email notifications, connection status indicators) · writing scenarios and user documentation</p>
+        <p class="skill-line tools">Notations & standards: C4 Model, UML, ERD, DBML, BPMN, Sequence Diagram, Use Case, Flow chart, Activity Diagram, PlantUML, Mermaid, Human Interface Guidelines, Material Design</p>
+      </div>
 
-  <footer>
-    <span>Тигран Айрапетян · Системный аналитик</span>
-    <button class="print-btn no-print" onclick="window.print()">Сохранить в PDF</button>
-  </footer>
+      <div class="skill-group">
+        <div class="skill-name">Integrations & APIs</div>
+        <p class="skill-line">Contract-first design · API specification and API mocking · REST API, WebSocket, Webhook · event-driven integrations via AsyncAPI and RabbitMQ · payment integrations (Stripe, CloudPayments, 3D Secure)</p>
+        <p class="skill-line tools">Formats & tools: OpenAPI, AsyncAPI, YAML, JSON, XML, CSV, Postman, RapidAPI, Redocly, DocHub</p>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-name">Security</div>
+        <p class="skill-line">Designing system access control · OAuth 2.0/2.1 (Authorization Code, Client Credentials, Implicit, ROPC) · RBAC / ABAC models</p>
+        <p class="skill-line tools">Protocols & algorithms: JWT Bearer Authentication, Basic Authentication, HMAC, Diffie-Hellman, elliptic-curve cryptography (ECDH)</p>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-name">Development Process & Documentation</div>
+        <p class="skill-line">Following SDLC principles (discovery → planning → system design) and architectural principles · adherence to RFCs · documentation as code · documentation versioning (Semantic Versioning) · documentation as a knowledge base</p>
+        <p class="skill-line tools">Approaches: Domain-Driven Design, MVVM, MVC, monolith / modules / microservices, message brokers, ETL</p>
+        <p class="skill-line tools">Tools: Markdown, Confluence, Notion, Obsidian, BookStack, Git, GitHub, GitLab, GitFlow, IDE, Grafana, Camunda</p>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-name">Using AI in My Work</div>
+        <p class="skill-line">I use several models as a tool integrated into my workflow — to automate processes, support research, and cut down on routine work.</p>
+        <p class="skill-line"><strong>Documentation without context switching.</strong> I integrate the model into my working tools: a documentation-as-code approach gives the model deep understanding of product and system context, which helps automate part of the documentation work and reduce routine tasks. For more traditional documentation setups, I use the model's integration via MCP.</p>
+        <p class="skill-line"><strong>Memory and knowledge base.</strong> I maintain structured memory of projects and agreements, combining the model's memory and context with my own Obsidian-based note system.</p>
+        <p class="skill-line"><strong>Documentation migration.</strong> I used models to migrate documentation for several mature products (700+ pages) from BookStack+Draw.io into Markdown and declarative formats (PlantUML, Mermaid, YAML, Camunda) to establish a documentation-as-code approach.</p>
+        <p class="skill-line"><strong>Know the tool's limits.</strong> Deliberate use of LLMs with a clear understanding of the model's boundaries — targeted, controlled use with context built up incrementally.</p>
+      </div>
+
+    </section>
+
+    <footer>
+      <span>Tigran Airapetyan · Systems Analyst</span>
+      <button class="print-btn no-print" onclick="window.print()">Save as PDF</button>
+    </footer>
+
+  </div>
 
 </main>
+
+<script>
+(function () {
+  var TITLES = {
+    ru: "Тигран Айрапетян — Системный аналитик",
+    en: "Tigran Airapetyan — Systems Analyst"
+  };
+  var DESCRIPTIONS = {
+    ru: "Системный аналитик с 10-летним опытом: проектирование систем и интеграций, API-контракты, требования, архитектура решений.",
+    en: "Systems Analyst with 10 years of experience: designing systems and integrations, API contracts, requirements, solution architecture."
+  };
+  var blocks = {
+    ru: document.getElementById("content-ru"),
+    en: document.getElementById("content-en")
+  };
+  var buttons = document.querySelectorAll(".lang-switch button");
+  var titleEl = document.getElementById("page-title");
+  var descEl = document.getElementById("page-description");
+
+  function setLang(lang) {
+    if (!blocks[lang]) return;
+    Object.keys(blocks).forEach(function (key) {
+      blocks[key].hidden = key !== lang;
+    });
+    buttons.forEach(function (btn) {
+      btn.classList.toggle("active", btn.dataset.lang === lang);
+    });
+    document.documentElement.lang = lang;
+    titleEl.textContent = TITLES[lang];
+    descEl.setAttribute("content", DESCRIPTIONS[lang]);
+    try { localStorage.setItem("cv-lang", lang); } catch (e) {}
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () { setLang(btn.dataset.lang); });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem("cv-lang"); } catch (e) {}
+  var initial = saved || (navigator.language && navigator.language.toLowerCase().indexOf("ru") === 0 ? "ru" : "en");
+  setLang(initial);
+})();
+</script>
+
 </body>
 </html>
