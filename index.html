@@ -1,748 +1,312 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Резюме: Тигран Айрапетян</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-/* Override strong tags inside headings to maintain consistent weight */
-h1 strong,
-h2 strong,
-h3 strong {
-	font-weight: 600;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 10px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-
-	table.collection-content {
-		width: 100%;
-		table-layout: fixed;
-	}
-
-	table.collection-content th,
-	table.collection-content td {
-		overflow-wrap: anywhere;
-	}
-
-	table.collection-content td > .user,
-	table.collection-content td > time {
-		white-space: pre-wrap;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content-wrapper {
-	overflow-x: auto;
-}
-
-@media only print {
-	.collection-content-wrapper {
-		overflow-x: visible;
-	}
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.collection-content td {
-	white-space: pre-wrap;
-	word-break: break-word;
-}
-
-.column-list {
-	display: flex;
-	gap: 46px;
-}
-
-.column {
-	min-width: 0;
-	overflow: hidden;
-}
-
-.column > *:first-child {
-	margin-top: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-table {
-	border-collapse: collapse;
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol.numbered-list.numbered-list-digits-2 {
-	padding-inline-start: 2em;
-}
-
-ol.numbered-list.numbered-list-digits-3plus {
-	padding-inline-start: 2.4em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-	margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.callout img.notion-static-icon {
-	width: 1em;
-	height: 1em;
-}
-
-.callout p {
-	margin: 0;
-}
-
-.callout h1,
-.callout h2,
-.callout h3 {
-	margin: 0 0 0.6rem;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-blockquote.quote-large {
-	font-size: 1.25em;
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.highlight-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.highlight-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.highlight-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.highlight-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.highlight-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.highlight-default_background {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray_background {
-	background: rgba(42, 28, 0, 0.07);
-}
-.highlight-brown_background {
-	background: rgba(139, 46, 0, 0.086);
-}
-.highlight-orange_background {
-	background: rgba(224, 101, 1, 0.129);
-}
-.highlight-yellow_background {
-	background: rgba(211, 168, 0, 0.137);
-}
-.highlight-teal_background {
-	background: rgba(0, 100, 45, 0.09);
-}
-.highlight-blue_background {
-	background: rgba(0, 124, 215, 0.094);
-}
-.highlight-purple_background {
-	background: rgba(102, 0, 178, 0.078);
-}
-.highlight-pink_background {
-	background: rgba(197, 0, 93, 0.086);
-}
-.highlight-red_background {
-	background: rgba(223, 22, 0, 0.094);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.block-color-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.block-color-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.block-color-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.block-color-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.block-color-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.block-color-default_background {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray_background {
-	background: rgba(240, 239, 237, 1);
-}
-.block-color-brown_background {
-	background: rgba(245, 237, 233, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 235, 222, 1);
-}
-.block-color-yellow_background {
-	background: rgba(249, 243, 220, 1);
-}
-.block-color-teal_background {
-	background: rgba(232, 241, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(229, 242, 252, 1);
-}
-.block-color-purple_background {
-	background: rgba(243, 235, 249, 1);
-}
-.block-color-pink_background {
-	background: rgba(250, 233, 241, 1);
-}
-.block-color-red_background {
-	background: rgba(252, 233, 231, 1);
-}
-.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
-.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
-.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
-.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
-.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
-.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
-.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
-.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
-.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
-.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="a7ed1f35-d60b-496d-95b3-1719bff9bcaa" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/gradients_2.png" style="object-position:center 19.999999999999996%"/><h1 class="page-title" dir="auto">Резюме: Тигран Айрапетян</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><p id="1077c799-fed0-807e-8f04-f664460bf265" class=""><mark class="highlight-gray">Системный аналитик</mark></p></div><div style="display:contents" dir="auto"><div id="1087c799-fed0-804f-be8b-dfd9ac3d6bb1" class="column-list"><div style="display:contents" dir="auto"><div id="1087c799-fed0-8064-b9fb-c5f1d2577471" style="width:50%" class="column"><div style="display:contents" dir="auto"><h2 id="315a3ff6-8560-4023-81ff-ca1b77a075b7" class="">☎️ Контакты</h2></div><div style="display:contents" dir="auto"><p id="1087c799-fed0-80e6-805e-e9f766e61aeb" class="">💬 <a href="http://t.me/tknjfs">@tknjfs</a></p></div><div style="display:contents" dir="auto"><p id="a10dfa02-39fc-46ff-a498-2d7152586f6c" class="">✉️ <a href="mailto:tigran.pro5@gmail.com">tigran.pro5@gmail.com</a></p></div><div style="display:contents" dir="auto"><p id="34a7c799-fed0-8048-bd97-d44b09030f87" class="">
-</p></div></div></div><div style="display:contents" dir="auto"><div id="1087c799-fed0-8077-95a5-d78b3fef9d60" style="width:50%" class="column"><div style="display:contents" dir="auto"><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">📍 Локация</summary><div class="indented"><div style="display:contents" dir="auto"><p id="1087c799-fed0-803a-96eb-ee3f5c9ef31b" class=""><strong>Город:</strong> <mark class="highlight-gray">Ереван, Москва</mark></p></div><div style="display:contents" dir="auto"><p id="1087c799-fed0-80ad-9afb-c18870d6c997" class=""><strong>Гражданство:</strong> <mark class="highlight-gray">РФ</mark></p></div><div style="display:contents" dir="auto"><p id="1087c799-fed0-80eb-be65-d8686aa3d3f7" class=""><strong>Формат работы</strong>: Гибрид; Удаленка; Офис</p></div><div style="display:contents" dir="auto"><p id="1087c799-fed0-803e-95ca-c804e20fc805" class=""><strong>Английский:</strong> ~B2</p></div></div></details></div></div></div></div></div><div style="display:contents" dir="auto"><p id="1087c799-fed0-8032-8286-f2cc66084c8b" class="">Системный аналитик с 10-летним опытом разработки цифровых продуктов, проектировании систем и интеграций. Специализируюсь на формировании системных требований, проектировании архитектуры решений и разработке API-контрактов. Имею опыт описания распределённых систем, интеграций и ведения технической документации.</p></div><div style="display:contents" dir="auto"><h2 id="adc52506-ffa6-4ccf-aa3b-24f10b2cfba8" class=""><strong>👨🏻‍💻 </strong>Опыт и квалификация</h2></div><div style="display:contents" dir="auto"><hr id="1077c799-fed0-8085-bcf7-fc8340918c91"/></div><div style="display:contents" dir="auto"><div id="1077c799-fed0-8059-b196-d42bfba59269" class="column-list"><div style="display:contents" dir="auto"><div id="1077c799-fed0-8054-88b2-e98619167904" style="width:18.75%" class="column"><div style="display:contents" dir="auto"><p id="1077c799-fed0-8023-938a-c0fe26c169bd" class=""><strong>Eclipse Digital </strong></p></div><div style="display:contents" dir="auto"><p id="1077c799-fed0-806e-b224-f4153d963314" class=""><mark class="highlight-gray">2023 - Наст. время</mark></p></div><div style="display:contents" dir="auto"><p id="10c7c799-fed0-8034-ad12-d4d14a7b7d56" class="">
-</p></div></div></div><div style="display:contents" dir="auto"><div id="1077c799-fed0-8057-861d-d1068c2d8d6d" style="width:81.25%" class="column"><div style="display:contents" dir="auto"><p id="1077c799-fed0-8010-9a37-e9105b0d4f7e" class=""><strong>Системный аналитик </strong></p></div><div style="display:contents" dir="auto"><p id="1077c799-fed0-80ea-8522-e0d325c90112" class=""><mark class="highlight-gray">Сбор и формирование системных требований; Проектирование системы и ведение проектной документации.</mark></p></div><div style="display:contents" dir="auto"><p id="10c7c799-fed0-8036-a336-da69f6388aa9" class="">
-</p></div></div></div></div></div><div style="display:contents" dir="auto"><div id="1077c799-fed0-8094-9ed6-edd3303501b0" class="column-list"><div style="display:contents" dir="auto"><div id="e716aa67-24d6-46d1-b539-a236a700590d" style="width:18.75%" class="column"><div style="display:contents" dir="auto"><p id="ef463e1f-389c-41e8-bf1c-cc8995b460ff" class=""><strong>Частичная занятость, фриланс</strong></p></div><div style="display:contents" dir="auto"><p id="8d843406-b1b0-4776-af75-9fff89068966" class=""><mark class="highlight-gray">2021 - 2023 </mark></p></div></div></div><div style="display:contents" dir="auto"><div id="aa3b6f37-9205-4847-a7f4-e08a52f12e5d" style="width:81.25%" class="column"><div style="display:contents" dir="auto"><p id="d59b5363-2ade-4239-8d3a-da7a11caf37d" class=""><strong>Swift разработчик, Системный аналитик</strong></p></div><div style="display:contents" dir="auto"><p id="1077c799-fed0-802a-aa36-fcc71a6ba226" class=""><mark class="highlight-gray">Разработка iOS приложений на Swift; Проектирование и описание технических решений. </mark></p></div></div></div></div></div><div style="display:contents" dir="auto"><div id="1077c799-fed0-8062-b07a-c0f533e8130f" class="column-list"><div style="display:contents" dir="auto"><div id="9348b924-7ad6-4d19-a60f-d7fadd6773da" style="width:18.75%" class="column"><div style="display:contents" dir="auto"><p id="6f9ef56b-0463-44c3-8ffb-5bef6c0cdaf1" class=""><strong>Request Design </strong></p></div><div style="display:contents" dir="auto"><p id="5415b10e-cdde-48a9-8997-f0835de60d22" class=""><mark class="highlight-gray">2016 - 2020 </mark></p></div><div style="display:contents" dir="auto"><p id="e9b3dfe3-cc9b-4940-8b96-8f35965407c5" class="">
-</p></div></div></div><div style="display:contents" dir="auto"><div id="86b2a2a4-79ee-4e9f-8231-160016cff985" style="width:81.25%" class="column"><div style="display:contents" dir="auto"><p id="2a632bd5-024c-4b21-9683-f28c0188a6c6" class=""><strong>UI/UX Дизайнер → Деливери менеджер/Системный аналитик</strong></p></div><div style="display:contents" dir="auto"><p id="1077c799-fed0-8018-920d-eadf40d32884" class=""><mark class="highlight-gray">Дизайн интерфейсов; Съем требований и ведение проектной документации; Проектирование решений и управление процессом поставки.</mark></p></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="5c38bb1e-b796-435c-9332-54084572b503" class="">🛠 Навыки и компетенции</h2></div><div style="display:contents" dir="auto"><hr id="1077c799-fed0-8071-ac14-f835428537eb"/></div><div style="display:contents" dir="ltr"><table id="1087c799-fed0-8045-91d2-f08fb2eb6d24" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="e9b6bcc8-b48f-4b0e-ade3-19478d8a3a5c"><td id="lFck" class="block-color-default_background" style="width:312px"><strong>Навыки и компетенции</strong></td><td id="H&gt;wB" class="block-color-default_background" style="width:324px"><strong>Практики</strong></td><td id="U&lt;nE" class="block-color-default_background" style="width:306px"><strong>Инструменты, технологии, методологии, стандарты, концепции</strong></td></tr></div><div style="display:contents" dir="ltr"><tr id="d27774ab-1cb1-4853-a8a9-59527a963f6e"><td id="lFck" class="" style="width:312px">Общие практики</td><td id="H&gt;wB" class="" style="width:324px">• Следование принципам SDLC;<br/>• Следование архитектурным принципам;<br/>• Соблюдение RFCs;<br/>• Documentation as code;<br/>• Версионирование документации;<br/>• Документация как база знаний;</td><td id="U&lt;nE" class="" style="width:306px">• Markdown, IDEs, Obsidian, Confluence, Notion, BookStack;<br/>• GitHub, GitLab, GitFlow;<br/>• Single source of truth, Domain Driven Design, MVVM, MVC, Монолит, Модули, Микросервисы, Брокеры сообщений, ETL;</td></tr></div><div style="display:contents" dir="ltr"><tr id="0eb23e3b-f4d9-4b23-996f-487de53fe551"><td id="lFck" class="" style="width:312px">• <mark class="highlight-default">Сбор продуктовых и системных требований; <br/></mark>• <mark class="highlight-default">Анализ и выявление требований к системе; <br/></mark>• <mark class="highlight-default">Декомпозиция требований к продукту;</mark></td><td id="H&gt;wB" class="" style="width:324px">• Продуктовая декомпозиция;<br/>• Продуктовая организация документации;<br/>• Описание продуктовых требований;<br/>• Описание бизнес-процессов, бизнес логики;<br/>• UX-Прототипирование;<br/>• Проктирование компонентов и взаимодействий системы;<br/>• Прототипирование модели данных;</td><td id="U&lt;nE" class="" style="width:306px">• Epics; User Stories; Tech Stories, INVEST;<br/>• draw.io, Lucidchart, Miro, MindMeister, Figma, FigJam, SwiftUI, Sketch; LLMs;<br/>• BPMN; Flow charts; Activity diagram;</td></tr></div><div style="display:contents" dir="ltr"><tr id="1087c799-fed0-8088-b485-f1da388218b8"><td id="lFck" class="" style="width:312px">• <mark class="highlight-default">Проработка тех. концепций;<br/></mark>• Проектирование системы;<mark class="highlight-default"><br/></mark>• Контроль и проработка UI/UX;<br/>• Описание поведений системы;</td><td id="H&gt;wB" class="" style="width:324px">• Описание архитектуры системы;<br/>• Описание баз данных;<br/>• Написание сценариев;<br/>• Описание маппинга и трансформации данных;<br/>• Описание алгоритмов;<br/></td><td id="U&lt;nE" class="" style="width:306px">• draw.io, Lucidchart, Figma, Sketch, LLMs;<br/>• ERD, C4 Model, UML, PlantUML, DBML, Mermaid, Sequence Diagram, Use Cases; BPMN;<br/>• Human Interface Guidelines, Material Design;<br/>• Принципы нормализации БД, Партиционирование и шардинг БД;</td></tr></div><div style="display:contents" dir="ltr"><tr id="10a7c799-fed0-8054-8450-c222fecc8181"><td id="lFck" class="" style="width:312px">Проектирование интеграций</td><td id="H&gt;wB" class="" style="width:324px">• Contract First;<br/>• API спецификация;<br/>• API mocking;</td><td id="U&lt;nE" class="" style="width:306px">• REST API, WebSocket, Webhook; <br/>• OpenAPI; AsyncAPI; YAML; JSON; XML; CSV;<br/>• Postman; RapidAPI;</td></tr></div><div style="display:contents" dir="ltr"><tr id="34a7c799-fed0-801b-9734-c5654535bf79"><td id="lFck" class="" style="width:312px">Соблюдение требований к безопасности системы</td><td id="H&gt;wB" class="" style="width:324px">• Проработка контроля доступа системы;</td><td id="U&lt;nE" class="" style="width:306px">• OAuth 2.0/2.1, JWT Bearer Authentication, Basic Authentication; <br/>• HMAC, Diffie-Hellman;<br/>• ABAC, RBAC;</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="13a7c799-fed0-8028-83bf-e46179bb948b" class="">
-</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тигран Айрапетян — Системный аналитик</title>
+<meta name="description" content="Системный аналитик с 10-летним опытом: проектирование систем и интеграций, API-контракты, требования, архитектура решений.">
+<meta property="og:title" content="Тигран Айрапетян — Системный аналитик">
+<meta property="og:description" content="Системный аналитик с 10-летним опытом: проектирование систем и интеграций, API-контракты, требования, архитектура решений.">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="https://tknjfs.github.io/cvsa/AfterlightImage.jpg">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #f7f8fa;
+    --text: #1a1d23;
+    --text-muted: #5c6370;
+    --border: #e5e7eb;
+    --accent: #2851c4;
+    --accent-soft: #eef2fc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --bg-soft: #1b1e24;
+      --text: #e8eaed;
+      --text-muted: #9aa1ac;
+      --border: #2a2e36;
+      --accent: #7c9cf0;
+      --accent-soft: #1d2436;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 3.5rem 1.5rem 5rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 0.15em;
+    letter-spacing: -0.01em;
+  }
+  .role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0;
+  }
+  .header-row {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    margin-bottom: 1.1em;
+    flex-wrap: wrap;
+  }
+  .avatar {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 35%;
+    flex-shrink: 0;
+    border: 2px solid var(--border);
+  }
+  .contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em 1.4em;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+  .contacts li { white-space: nowrap; }
+  .contacts a { color: var(--text-muted); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .contacts a:hover { color: var(--accent); border-color: var(--accent); }
+  h2 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5em;
+    margin: 2.6em 0 1.2em;
+  }
+  section:first-of-type h2 { margin-top: 0; }
+  p { margin: 0 0 1em; }
+  .about { color: var(--text); }
+  .job { margin-bottom: 1.8em; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.2em 1em;
+    margin-bottom: 0.5em;
+  }
+  .job-title { font-weight: 700; font-size: 1.02rem; }
+  .job-role { color: var(--text-muted); font-weight: 400; }
+  .job-dates {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+  ul.bullets {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+  ul.bullets li { margin-bottom: 0.45em; }
+  ul.bullets li:last-child { margin-bottom: 0; }
+  .skill-group {
+    margin-bottom: 1.5em;
+  }
+  .skill-group:last-child { margin-bottom: 0; }
+  .skill-name {
+    font-weight: 700;
+    font-size: 0.98rem;
+    margin-bottom: 0.35em;
+  }
+  .skill-line {
+    margin: 0 0 0.35em;
+    color: var(--text);
+  }
+  .skill-line.tools {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+  }
+  .skill-line:last-child { margin-bottom: 0; }
+  .ai-list {
+    list-style: none;
+    margin: 0.6em 0 0;
+    padding: 0;
+  }
+  .ai-list li {
+    margin-bottom: 0.7em;
+    padding-left: 1.1em;
+    position: relative;
+  }
+  .ai-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  .ai-list li:last-child { margin-bottom: 0; }
+  .ai-list strong { color: var(--text); }
+  footer {
+    margin-top: 3.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  .print-btn {
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    padding: 0.5em 0.9em;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .print-btn:hover { color: var(--accent); border-color: var(--accent); }
+  @media print {
+    body { padding: 0; font-size: 12.5px; }
+    .contacts a { border-bottom: none; }
+    footer { display: none; }
+    h2 { break-after: avoid; }
+    .job, .skill-group { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="header-row">
+    <img class="avatar" src="AfterlightImage.jpg" alt="Тигран Айрапетян">
+    <div>
+      <h1>Тигран Айрапетян</h1>
+      <p class="role">Системный аналитик</p>
+    </div>
+  </div>
+  <ul class="contacts">
+    <li>📍 Ереван, Москва</li>
+    <li>🌍 Гражданство РФ</li>
+    <li>🇬🇧 English B2–C1</li>
+    <li>⌨️ Гибрид / Удалённо / Офис</li>
+    <li>💬 <a href="https://t.me/tknjfs">t.me/tknjfs</a></li>
+    <li>✉️ <a href="mailto:tigran.pro5@gmail.com">tigran.pro5@gmail.com</a></li>
+  </ul>
+
+  <section>
+    <h2>О себе</h2>
+    <p class="about">Системный аналитик с 10-летним опытом в разработке цифровых продуктов: проектирование систем и интеграций, сбор и формирование требований, проработка архитектуры решений. Прошёл полный цикл продуктовой разработки: UI/UX-дизайн; разработка приложений на Swift; системный анализ; управление проектами. Одинаково свободно работаю и с продуктовыми требованиями, и с технической спецификацией.</p>
+  </section>
+
+  <section>
+    <h2>Опыт работы</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Eclipse Digital <span class="job-role">— Системный аналитик</span></span>
+        <span class="job-dates">2023 — настоящее время</span>
+      </div>
+      <ul class="bullets">
+        <li><strong>Анализ требований:</strong> собираю и формализую требования, перевожу бизнес-задачи в архитектуру решений и API-контракты.</li>
+        <li><strong>Проектирование:</strong> разработка технических решений для продуктов, включающих в себя микросервисную и монолитную архитектуру разных доменных областей, а также мобильные приложения и веб-интерфейсы.</li>
+        <li><strong>Документация:</strong> ведение проектной документации по принципу single source of truth, поддерживаю её как базу знаний продукта и системы.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Freelance <span class="job-role">— Swift-разработчик</span></span>
+        <span class="job-dates">2021 — 2023</span>
+      </div>
+      <ul class="bullets">
+        <li><strong>UI/UX:</strong> дизайн приложений на основе Human Interface Guidelines.</li>
+        <li><strong>Разработка:</strong> iOS-приложения на Swift.</li>
+        <li><strong>Проектирование и документирование:</strong> технических решений — от прототипа интерфейса до архитектуры приложения.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Request Design <span class="job-role">— UI/UX-дизайнер → Деливери-менеджер / Системный аналитик</span></span>
+        <span class="job-dates">2016 — 2020</span>
+      </div>
+      <ul class="bullets">
+        <li>Прошёл карьерный путь от дизайна интерфейсов до управления поставкой, разработки и системного анализа.</li>
+        <li>Проектировал UI/UX, снимал и формализовал требования, вёл проектную документацию, вёл прямую коммуникацию с заказчиками и стейкхолдерами.</li>
+        <li>Отвечал за проектирование решений и управление процессом поставки на проектах.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Профессиональные навыки</h2>
+
+    <div class="skill-group">
+      <div class="skill-name">Анализ требований и продуктовый подход</div>
+      <p class="skill-line">Сбор продуктовых и системных требований · анализ и выявление требований · декомпозиция по epics / user stories / tech stories · таксономия требований (business / functional / non-functional / user / system, quality attributes, constraints) · описание бизнес-процессов и бизнес-логики · UX-прототипирование · проектирование компонентов и взаимодействий системы</p>
+      <p class="skill-line tools">Инструменты: Figma, FigJam, Miro, MindMeister, draw.io, Lucidchart, Sketch, SwiftUI, LLM-инструменты</p>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-name">Архитектура и проектирование систем</div>
+      <p class="skill-line">Проектирование архитектуры и поведения системы · моделирование и прототипирование данных · описание баз данных (нормализация, индексы, партиционирование, шардинг, SQL/NoSQL) · описание алгоритмов, маппинга и трансформации данных · проектирование типовых продуктовых механик (идентификация и сессии, в т.ч. беспарольная, pin-code, логирование, email-уведомления, индикация статуса соединения) · написание сценариев и пользовательской документации</p>
+      <p class="skill-line tools">Нотации и стандарты: C4 Model, UML, ERD, DBML, BPMN, Sequence Diagram, Use Case, Flow chart, Activity Diagram, PlantUML, Mermaid, Human Interface Guidelines, Material Design</p>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-name">Интеграции и API</div>
+      <p class="skill-line">Contract-first проектирование · API-спецификация и API mocking · REST API, WebSocket, Webhook · событийные интеграции через AsyncAPI и RabbitMQ · платёжные интеграции (Stripe, CloudPayments, 3D Secure)</p>
+      <p class="skill-line tools">Форматы и инструменты: OpenAPI, AsyncAPI, YAML, JSON, XML, CSV, Postman, RapidAPI, Redocly, DocHub</p>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-name">Безопасность</div>
+      <p class="skill-line">Проектирование контроля доступа к системе · OAuth 2.0/2.1 (Authorization Code, Client Credentials, Implicit, ROPC) · модели RBAC / ABAC</p>
+      <p class="skill-line tools">Протоколы и алгоритмы: JWT Bearer Authentication, Basic Authentication, HMAC, Diffie-Hellman, эллиптическая криптография (ECDH)</p>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-name">Процессы разработки и документация</div>
+      <p class="skill-line">Следование принципам SDLC (discovery → planning → system design) и архитектурным принципам · соблюдение RFC · documentation as code · версионирование документации (Semantic Versioning) · документация как база знаний</p>
+      <p class="skill-line tools">Подходы: Domain-Driven Design, MVVM, MVC, монолит / модули / микросервисы, брокеры сообщений, ETL</p>
+      <p class="skill-line tools">Инструменты: Markdown, Confluence, Notion, Obsidian, BookStack, Git, GitHub, GitLab, GitFlow, IDE, Grafana, Camunda</p>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-name">Использование ИИ в работе</div>
+      <p class="skill-line">Использую несколько моделей как интегрированный в рабочую среду инструмент — для автоматизации процессов, поддержки исследований и снижения рутинной нагрузки.</p>
+      <ul class="ai-list">
+        <li><strong>Документация без переключения контекста.</strong> Интегрирую модель в рабочие инструменты: подход documentation-as-code позволяет наделить модель глубоким пониманием контекста продукта и системы, что помогает автоматизировать часть работы по ведению документации и снизить рутинную нагрузку. Для более традиционных подходов к ведению документации использую интеграцию модели через MCP.</li>
+        <li><strong>Память и база знаний.</strong> Веду структурированную память по проектам и договорённостям, совмещая память и контекст модели с собственной системой заметок на основе Obsidian.</li>
+        <li><strong>Миграция документации.</strong> Использовал модели для миграции документации нескольких зрелых продуктов (700+ страниц) из BookStack+Draw.io в Markdown и декларативные форматы (PlantUML, Mermaid, YAML, Camunda) для выстраивания подхода documentation-as-code.</li>
+        <li><strong>Знаю границы инструмента.</strong> Осознанное использование LLM с пониманием границ возможностей модели, точечное и контролируемое применение с наращиванием контекста.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <footer>
+    <span>Тигран Айрапетян · Системный аналитик</span>
+    <button class="print-btn no-print" onclick="window.print()">Сохранить в PDF</button>
+  </footer>
+
+</main>
+</body>
+</html>
