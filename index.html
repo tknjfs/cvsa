@@ -183,25 +183,6 @@
     gap: 1em;
     flex-wrap: wrap;
   }
-  .print-btn {
-    border: 1px solid var(--border);
-    background: var(--bg-soft);
-    color: var(--text-muted);
-    font-size: 0.82rem;
-    padding: 0.5em 0.9em;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: inherit;
-  }
-  .print-btn:hover { color: var(--accent); border-color: var(--accent); }
-  @media print {
-    body { padding: 0; font-size: 12.5px; }
-    .contacts a { border-bottom: none; }
-    footer { display: none; }
-    .no-print { display: none !important; }
-    h2 { break-after: avoid; }
-    .job, .skill-group { break-inside: avoid; }
-  }
 </style>
 </head>
 <body>
@@ -322,7 +303,6 @@
 
     <footer>
       <span>Тигран Айрапетян · Системный аналитик</span>
-      <button class="print-btn no-print" onclick="window.print()">Сохранить в PDF</button>
     </footer>
 
   </div>
@@ -437,7 +417,6 @@
 
     <footer>
       <span>Tigran Ayrapetyan · Systems Analyst</span>
-      <button class="print-btn no-print" onclick="window.print()">Save as PDF</button>
     </footer>
 
   </div>
