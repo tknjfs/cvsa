@@ -474,15 +474,27 @@
     titleEl.textContent = TITLES[lang];
     descEl.setAttribute("content", DESCRIPTIONS[lang]);
     try { localStorage.setItem("cv-lang", lang); } catch (e) {}
+    try {
+      var url = new URL(location.href);
+      url.searchParams.set("lang", lang);
+      history.replaceState(null, "", url);
+    } catch (e) {}
   }
 
   buttons.forEach(function (btn) {
     btn.addEventListener("click", function () { setLang(btn.dataset.lang); });
   });
 
+  function paramLang() {
+    var v = new URLSearchParams(location.search).get("lang");
+    v = v ? v.toLowerCase() : null;
+    return blocks[v] ? v : null;
+  }
+
   var saved = null;
   try { saved = localStorage.getItem("cv-lang"); } catch (e) {}
-  var initial = saved || (navigator.language && navigator.language.toLowerCase().indexOf("ru") === 0 ? "ru" : "en");
+  var browserLang = navigator.language && navigator.language.toLowerCase().indexOf("ru") === 0 ? "ru" : "en";
+  var initial = paramLang() || saved || browserLang;
   setLang(initial);
 })();
 </script>
