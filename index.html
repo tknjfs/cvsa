@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="page-title">Тигран Айрапетян — Системный аналитик</title>
-<meta id="page-description" name="description" content="Системный аналитик с 10-летним опытом: проектирование систем и интеграций, API-контракты, требования, архитектура решений.">
+<meta id="page-description" name="description" content="Системный аналитик: проектирование систем и интеграций, API-контракты, требования, архитектура решений.">
 <meta property="og:title" content="Тигран Айрапетян — Системный аналитик">
-<meta property="og:description" content="Системный аналитик с 10-летним опытом: проектирование систем и интеграций, API-контракты, требования, архитектура решений.">
+<meta property="og:description" content="Системный аналитик: проектирование систем и интеграций, API-контракты, требования, архитектура решений.">
 <meta property="og:type" content="profile">
 <meta property="og:image" content="https://tknjfs.github.io/cvsa/AfterlightImage.jpg">
 <style>
@@ -142,6 +142,13 @@
   }
   .job-title { font-weight: 700; font-size: 1.02rem; }
   .job-role { color: var(--text-muted); font-weight: 400; }
+  .job-meta {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin: -0.15em 0 0.6em;
+  }
+  .edu-line { margin: 0; }
+  .edu-line span { color: var(--text-muted); }
   .job-dates {
     color: var(--text-muted);
     font-size: 0.88rem;
@@ -213,7 +220,7 @@
 
     <section>
       <h2>О себе</h2>
-      <p class="about">Системный аналитик с 10-летним опытом в разработке цифровых продуктов: проектирование систем и интеграций, сбор и формирование требований, проработка архитектуры решений. Прошёл полный цикл продуктовой разработки: UI/UX-дизайн; разработка приложений на Swift; системный анализ; управление проектами. Одинаково свободно работаю и с продуктовыми требованиями, и с технической спецификацией.</p>
+      <p class="about">Системный аналитик: проектирование систем и интеграций, сбор и формализация требований, проработка архитектуры решений. Веду продукт от обследования бизнес-процесса до модели данных, API-контрактов и требований к интерфейсам. До системного анализа занимался UI/UX-дизайном, разработкой приложений на Swift и управлением поставкой — поэтому одинаково свободно работаю и с продуктовыми требованиями, и с технической спецификацией.</p>
     </section>
 
     <section>
@@ -224,10 +231,13 @@
           <span class="job-title">Eclipse Digital <span class="job-role">— Системный аналитик</span></span>
           <span class="job-dates">2023 — настоящее время</span>
         </div>
+        <p class="job-meta">Продуктовая аутсорс-команда: информационные системы и мобильные приложения для внешних заказчиков. Основной проект — экосистема цифровых продуктов РЕХАУ: веб-платформа, интернет-магазин, мобильные приложения, производственные сервисы, а также портал РЕХАУ.Про для заказчиков и монтажников инженерных систем.</p>
         <ul class="bullets">
-          <li><strong>Анализ требований:</strong> собираю и формализую требования, перевожу бизнес-задачи в архитектуру решений и API-контракты.</li>
-          <li><strong>Проектирование:</strong> разработка технических решений для продуктов, включающих в себя микросервисную и монолитную архитектуру разных доменных областей, а также мобильные приложения и веб-интерфейсы.</li>
-          <li><strong>Документация:</strong> ведение проектной документации по принципу single source of truth, поддерживаю её как базу знаний продукта и системы.</li>
+          <li><strong>Обследование и требования.</strong> Обследую предметную область и описываю бизнес-процессы AS IS → TO BE. Собираю и формализую продуктовые и системные требования: функциональные, нефункциональные, требования к интерфейсам и поведению клиентских приложений. Раскладываю на эпики и user/tech stories, формирую бэклог, пишу технические задания на реализацию.</li>
+          <li><strong>Прототипирование и дизайн.</strong> Реализую прототипирование интерфейсов и дизайн с помощью ИИ-моделей на основе написанной мной документации.</li>
+          <li><strong>Проектирование систем и данных.</strong> Определяю состав компонентов системы и их взаимодействие, проектирую данные — от концептуальной модели до схем и описания таблиц БД, описываю сценарии и пользовательские процессы.</li>
+          <li><strong>Интеграции.</strong> Проектирую интеграции с внешними системами, в том числе с зарубежными производственными площадками: REST API и вебхуки, контракты обмена, сценарии обработки и валидации входящих данных.</li>
+          <li><strong>Документация.</strong> Веду документацию продуктов (BookStack, Confluence) как единый источник правды: требования, сценарии, схемы БД, описания интеграций, версионирование по фичам. Перенёс 700+ страниц документации зрелых продуктов из BookStack и draw.io в Markdown и декларативные форматы (PlantUML, Mermaid, YAML).</li>
         </ul>
       </div>
 
@@ -248,10 +258,11 @@
           <span class="job-title">Request Design <span class="job-role">— UI/UX-дизайнер → Деливери-менеджер / Системный аналитик</span></span>
           <span class="job-dates">2016 — 2020</span>
         </div>
+        <p class="job-meta">Продуктовая аутсорс-команда: веб, мобильные и десктопные приложения для внешних заказчиков. Проекты: «Братья Караваевы» — клиентское веб-приложение с заказом еды и интеграцией с фабрикой-кухней сети; International Quaternity Chess Association — веб-, мобильное и десктопное приложение для игры онлайн; ДЕПО.Москва — веб- и мобильное приложение-путеводитель по гастрономическому пространству, его корнерам и событиям.</p>
         <ul class="bullets">
           <li>Прошёл карьерный путь от дизайна интерфейсов до управления поставкой, разработки и системного анализа.</li>
           <li>Проектировал UI/UX, снимал и формализовал требования, вёл проектную документацию, вёл прямую коммуникацию с заказчиками и стейкхолдерами.</li>
-          <li>Отвечал за проектирование решений и управление процессом поставки на проектах.</li>
+          <li>Отвечал за проектирование решений и управление процессом поставки на проектах, включая интеграции платёжных провайдеров (CloudPayments, 3D Secure).</li>
         </ul>
       </div>
     </section>
@@ -280,7 +291,7 @@
       <div class="skill-group">
         <div class="skill-name">Безопасность</div>
         <p class="skill-line">Проектирование контроля доступа к системе · OAuth 2.0/2.1 (Authorization Code, Client Credentials, Implicit, ROPC) · модели RBAC / ABAC</p>
-        <p class="skill-line tools">Протоколы и алгоритмы: JWT Bearer Authentication, Basic Authentication, HMAC, Diffie-Hellman, эллиптическая криптография (ECDH)</p>
+        <p class="skill-line tools">Протоколы и алгоритмы: JWT Bearer Authentication, Basic Authentication, HMAC</p>
       </div>
 
       <div class="skill-group">
@@ -292,13 +303,16 @@
 
       <div class="skill-group">
         <div class="skill-name">Использование ИИ в работе</div>
-        <p class="skill-line">Использую несколько моделей как интегрированный в рабочую среду инструмент — для автоматизации процессов, поддержки исследований и снижения рутинной нагрузки.</p>
-        <p class="skill-line"><strong>Документация без переключения контекста.</strong> Интегрирую модель в рабочие инструменты: подход documentation-as-code позволяет наделить модель глубоким пониманием контекста продукта и системы, что помогает автоматизировать часть работы по ведению документации и снизить рутинную нагрузку. Для более традиционных подходов к ведению документации использую интеграцию модели через MCP.</p>
-        <p class="skill-line"><strong>Память и база знаний.</strong> Веду структурированную память по проектам и договорённостям, совмещая память и контекст модели с собственной системой заметок на основе Obsidian.</p>
-        <p class="skill-line"><strong>Миграция документации.</strong> Использовал модели для миграции документации нескольких зрелых продуктов (700+ страниц) из BookStack+Draw.io в Markdown и декларативные форматы (PlantUML, Mermaid, YAML, Camunda) для выстраивания подхода documentation-as-code.</p>
-        <p class="skill-line"><strong>Знаю границы инструмента.</strong> Осознанное использование LLM с пониманием границ возможностей модели, точечное и контролируемое применение с наращиванием контекста.</p>
+        <p class="skill-line">Использую модели как инструмент, интегрированный в рабочую среду. Documentation-as-code даёт модели контекст продукта и системы и снимает часть рутины по ведению документации; для классических вики подключаю модель через MCP.</p>
+        <p class="skill-line">Веду структурированную память по проектам и договорённостям, совмещая контекст модели с собственной системой заметок в Obsidian.</p>
+        <p class="skill-line">Применяю точечно и с пониманием границ модели.</p>
       </div>
 
+    </section>
+
+    <section>
+      <h2>Образование</h2>
+      <p class="edu-line">Московский авиационный институт (МАИ) — менеджмент <span>· 2012—2016</span></p>
     </section>
 
     <footer>
@@ -327,7 +341,7 @@
 
     <section>
       <h2>About</h2>
-      <p class="about">Systems analyst with 10 years of experience building digital products: designing systems and integrations, gathering and formalizing requirements, working out solution architecture. I've been through the full product development cycle — UI/UX design, iOS development in Swift, systems analysis, and project management — so I move equally comfortably between product requirements and technical specifications.</p>
+      <p class="about">Systems analyst: designing systems and integrations, gathering and formalizing requirements, working out solution architecture. I take a product from business process discovery through to the data model, API contracts, and interface requirements. Before moving into systems analysis I worked in UI/UX design, iOS development in Swift, and delivery management — so I move equally comfortably between product requirements and technical specifications.</p>
     </section>
 
     <section>
@@ -338,10 +352,13 @@
           <span class="job-title">Eclipse Digital <span class="job-role">— Systems Analyst</span></span>
           <span class="job-dates">2023 — present</span>
         </div>
+        <p class="job-meta">Product-focused outsourcing team building information systems and mobile apps for external clients. Primary project — the REHAU digital product ecosystem: web platform, online store, mobile apps, manufacturing services, and the REHAU.Pro portal for customers and installers of engineering systems.</p>
         <ul class="bullets">
-          <li><strong>Requirements analysis:</strong> gather and formalize requirements, translating business problems into solution architecture and API contracts.</li>
-          <li><strong>Design:</strong> developing technical solutions for products spanning microservice and monolithic architectures across different domains, as well as mobile apps and web interfaces.</li>
-          <li><strong>Documentation:</strong> maintaining project documentation as a single source of truth, keeping it current as the product and system knowledge base.</li>
+          <li><strong>Discovery and requirements.</strong> I survey the domain and document business processes AS IS → TO BE. I gather and formalize product and system requirements: functional, non-functional, and requirements for interfaces and client app behavior. I break work down into epics and user/tech stories, build the backlog, and write specifications for implementation.</li>
+          <li><strong>System and data design.</strong> I define system components and how they interact, and design the data — from the conceptual model through to database schemas and table specifications — along with scenarios and user flows.</li>
+          <li><strong>Prototyping and design.</strong> I take on interface prototyping and design myself, building them from the documentation with the help of AI models.</li>
+          <li><strong>Integrations.</strong> I design integrations with external systems, including overseas production sites: REST APIs and webhooks, exchange contracts, and scenarios for processing and validating incoming data.</li>
+          <li><strong>Documentation.</strong> I maintain product documentation (BookStack, Confluence) as a single source of truth: requirements, scenarios, database schemas, integration specs, per-feature versioning. Migrated 700+ pages of documentation for mature products from BookStack and draw.io into Markdown and declarative formats (PlantUML, Mermaid, YAML).</li>
         </ul>
       </div>
 
@@ -362,10 +379,11 @@
           <span class="job-title">Request Design <span class="job-role">— UI/UX Designer → Delivery Manager / Systems Analyst</span></span>
           <span class="job-dates">2016 — 2020</span>
         </div>
+        <p class="job-meta">Product-focused outsourcing team building web, mobile and desktop applications for external clients. Projects: Bratya Karavaevy — a customer-facing web app for food ordering, integrated with the chain's central production kitchen; the International Quaternity Chess Association — web, mobile and desktop apps for playing online; DEPO.Moscow — web and mobile apps presenting the food hall, its corners and events.</p>
         <ul class="bullets">
           <li>Progressed from interface design to delivery management and systems analysis.</li>
           <li>Designed UI/UX, gathered and formalized requirements, maintained project documentation, and communicated directly with clients and stakeholders.</li>
-          <li>Owned solution design and delivery management on projects.</li>
+          <li>Owned solution design and delivery management on projects, including payment provider integrations (CloudPayments, 3D Secure).</li>
         </ul>
       </div>
     </section>
@@ -394,7 +412,7 @@
       <div class="skill-group">
         <div class="skill-name">Security</div>
         <p class="skill-line">Designing system access control · OAuth 2.0/2.1 (Authorization Code, Client Credentials, Implicit, ROPC) · RBAC / ABAC models</p>
-        <p class="skill-line tools">Protocols & algorithms: JWT Bearer Authentication, Basic Authentication, HMAC, Diffie-Hellman, elliptic-curve cryptography (ECDH)</p>
+        <p class="skill-line tools">Protocols & algorithms: JWT Bearer Authentication, Basic Authentication, HMAC</p>
       </div>
 
       <div class="skill-group">
@@ -406,13 +424,16 @@
 
       <div class="skill-group">
         <div class="skill-name">Using AI in My Work</div>
-        <p class="skill-line">I use several models as a tool integrated into my workflow — to automate processes, support research, and cut down on routine work.</p>
-        <p class="skill-line"><strong>Documentation without context switching.</strong> I integrate the model into my working tools: a documentation-as-code approach gives the model deep understanding of product and system context, which helps automate part of the documentation work and reduce routine tasks. For more traditional documentation setups, I use the model's integration via MCP.</p>
-        <p class="skill-line"><strong>Memory and knowledge base.</strong> I maintain structured memory of projects and agreements, combining the model's memory and context with my own Obsidian-based note system.</p>
-        <p class="skill-line"><strong>Documentation migration.</strong> I used models to migrate documentation for several mature products (700+ pages) from BookStack+Draw.io into Markdown and declarative formats (PlantUML, Mermaid, YAML, Camunda) to establish a documentation-as-code approach.</p>
-        <p class="skill-line"><strong>Know the tool's limits.</strong> Deliberate use of LLMs with a clear understanding of the model's boundaries — targeted, controlled use with context built up incrementally.</p>
+        <p class="skill-line">I use models as a tool integrated into my working environment. Documentation-as-code gives the model product and system context and takes over part of the routine documentation work; for classic wikis I connect the model via MCP.</p>
+        <p class="skill-line">I maintain structured memory of projects and agreements, combining the model's context with my own Obsidian-based note system.</p>
+        <p class="skill-line">I apply it selectively and with a clear sense of the model's limits.</p>
       </div>
 
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p class="edu-line">Moscow Aviation Institute (MAI) — Management <span>· 2012—2016</span></p>
     </section>
 
     <footer>
@@ -430,8 +451,8 @@
     en: "Tigran Ayrapetyan — Systems Analyst"
   };
   var DESCRIPTIONS = {
-    ru: "Системный аналитик с 10-летним опытом: проектирование систем и интеграций, API-контракты, требования, архитектура решений.",
-    en: "Systems Analyst with 10 years of experience: designing systems and integrations, API contracts, requirements, solution architecture."
+    ru: "Системный аналитик: проектирование систем и интеграций, API-контракты, требования, архитектура решений.",
+    en: "Systems Analyst: designing systems and integrations, API contracts, requirements, solution architecture."
   };
   var blocks = {
     ru: document.getElementById("content-ru"),
